@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>CONDITION-STATEMENTS</title>
+</head>
+<body style=" background-color:deeppink ; font-size: 30px;">
+<script>
+function relation(){
+    if(document.getElementById("t1").value==document.getElementById("t2").value)
+    {
+        document.getElementById("res").innerHTML="BOTH ARE EQUAL";
+    }
+    else if(document.getElementById("t1").value>=document.getElementById("t2").value)
+    {
+        document.getElementById("res").innerHTML="FIRST NUMBER IS GREATER THAN THE SECOND NUMBER";
+    }
+    else
+    {
+        document.getElementById("res").innerHTML="FIRST NUMBER IS SMALLER THAN THE SECOND NUMBER";
+    }
+}
+</script>
+<h1>Enter the First Number: <input type="text" id="t1"><br></h1>
+<h1>Enter the Second Number: <input type="text" id="t2"><br></h1>
+<button type="button" onclick="relation()">Verify</button>
+<div id="res"></div>
+</body>
+</html>
